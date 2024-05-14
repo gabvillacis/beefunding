@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "crowdfunding"
+version = "0.1.0"
+description = ""
+authors = ["Poll Cedeño <poll.cedeno@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2.11"
+pillow = "^10.3.0"
+psycopg2-binary = "^2.9.9"
+django-environ = "^0.11.2"
+azure-storage-blob = "^12.20.0"
+django-storages = {extras = ["azure"], version = "^1.14.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
