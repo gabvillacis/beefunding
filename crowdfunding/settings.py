@@ -166,3 +166,17 @@ else:
 
     STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/static/'
     MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/media/'
+    
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'ERROR',  # Nivel de registro que se desea ver
+    },
+}
